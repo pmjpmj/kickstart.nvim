@@ -15,6 +15,7 @@ return {
   },
   opts = {
     sources = { 'filesystem', 'buffers', 'git_status' },
+    auto_clean_after_session_restore = true, -- Automatically clean up broken neo-tree buffers saved in sessions
     filesystem = {
       bind_to_cwd = false,
       follow_current_file = { enabled = true },
